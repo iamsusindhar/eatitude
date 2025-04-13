@@ -178,7 +178,7 @@ main{
 }
 .au-content p{
     width: 95%;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     color: #b7b7b7;
 }
 .achievements{
@@ -186,7 +186,7 @@ main{
     justify-content: space-between;
     width: 100%;
     text-align: center;
-    padding-top: 18px;
+    padding-top: 12px;
 }
 .achievements h1{
     font-size: 1.5rem;
@@ -865,7 +865,7 @@ hr{
         height: 280px;
     }
     .achievements{
-        padding-top: 20px ;
+        padding: 12px 0 ;
     }
     .achievements h1{
         font-size: 1.4rem;
