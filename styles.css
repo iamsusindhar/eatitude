@@ -183,7 +183,6 @@ main{
 .achievements{
     display: flex;
     justify-content: space-around;
-    gap: 20px;
     width: 100%;
     text-align: center;
     padding-top: 18px;
@@ -861,10 +860,10 @@ hr{
         padding-top: 20px ;
     }
     .achievements h1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .achievements p{
-         font-size:1rem ;
+         font-size:.8rem ;
          width: 100%;
     }
     .au-content{
