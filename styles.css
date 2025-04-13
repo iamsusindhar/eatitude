@@ -960,7 +960,7 @@ hr{
         margin-bottom: 14px;
     }
     .input-wrapper input[type='email']{
-        width: 100%;
+        width: auto;
     }
     .input-wrapper button{
         position: relative;
@@ -970,7 +970,7 @@ hr{
         padding: 0;
     }
     .newsletter h1{
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0 20px;
         margin-bottom: 20px;
         width: auto;
