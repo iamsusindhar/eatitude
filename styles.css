@@ -843,6 +843,9 @@ hr{
         text-align: left;
         padding-bottom: 20px;
     }
+    .button{
+        margin-top: 45px;
+    }
     .header-button a{
         font-size: .8rem;
         padding: 8px 20px;
