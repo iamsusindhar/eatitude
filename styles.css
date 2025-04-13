@@ -822,7 +822,7 @@ hr{
         padding: 20px;
     }
     .logo img{
-        width: 80px;
+        width: 85px;
     }
     .navbar{
         display: none;
@@ -832,13 +832,14 @@ hr{
     }
     .landing-page h1{
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         text-align: left;
+        margin-top: 40px;
     }
     .landing-page p{
         text-align: center;
         width: 100%;
-        font-size: .9rem;
+        font-size: 1rem;
         text-align: left;
     }
     .header-button a{
@@ -912,7 +913,7 @@ hr{
     }
     .trusted-by-container div{
         width: 100%;
-        height: 70px;
+        height: 60px;
     }
     .trusted-by-container a{
         display: none;
@@ -958,6 +959,16 @@ hr{
     .blog-post{
         margin-bottom: 14px;
     }
+    .input-wrapper input[type='email']{
+        width: 100%;
+    }
+    .input-wrapper button{
+        position: relative;
+        margin-top: 10px;
+    }
+    .newsletter{
+        padding: 0;
+    }
     .newsletter h1{
         font-size: 1rem;
         padding: 0 20px;
@@ -995,8 +1006,20 @@ hr{
        padding: 16px 0;
        font-size: 1.1rem;
     }
+    .social-links h1{
+        font-size: 1rem;
+    }
     .credits p{
         font-size: .8rem;
+    }
+    .footer-logo h3{
+        font-size: 1.5rem;
+    }
+    .footer-logo p{
+        width: 100%;
+    }
+    .terms-conditions{
+        padding: 0 10px;
     }
 }
 @media (min-width: 1700px) {
