@@ -212,6 +212,9 @@ input[type="date"]{
     #blog{
         padding: 10px 40px;
     }
+    main{
+        padding:0 10px;
+    }
     .blog-article{
         padding: 0 10px;
     }
@@ -249,23 +252,27 @@ input[type="date"]{
         width: 100%;
         padding-top: 20px;
         font-size: 1.5rem;
+        text-align: left;
     }
     .blog-image{
         padding: 10px 0;
     }
     .blog-article h2{
         width: 100%;
+        font-size: 1.3rem;
     }
     .blog-article p{
         width: 100%;
     }
     .blog-article h3{
-        text-align: center;
         width: 100%;
         margin: 0 auto;
         padding: 30px 0;
         font-size: 1.3rem;
         font-family: Lora;
+    }
+    .blog-article h6{
+        text-align: left;
     }
     .section-header{
         display: block;
