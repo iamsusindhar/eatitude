@@ -517,7 +517,7 @@ main{
 
 /* Newsletter */
 
-.newsletter{
+/* .newsletter{
     min-height: 55vh;
     text-align: center;
     background: #171717;
@@ -564,7 +564,7 @@ main{
 /* Optional: for hover effect */
 .input-wrapper button:hover {
     background-color: #444;
-}
+} */
   
 
 /* contact us page */
@@ -964,7 +964,7 @@ hr{
     .blog-post{
         margin-bottom: 14px;
     }
-    .input-wrapper input[type='email']{
+/*     .input-wrapper input[type='email']{
         width: auto;
     }
     .input-wrapper button{
@@ -983,7 +983,7 @@ hr{
     .input-wrapper input[type='email'] {
         width: 380px;
         height: 45px;
-    }
+    } */
    
     .contact-box{
         flex-direction: column;
