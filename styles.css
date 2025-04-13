@@ -832,12 +832,13 @@ hr{
     }
     .landing-page h1{
         text-align: center;
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     .landing-page p{
         text-align: center;
         width: 90%;
         margin: auto;
+        font-size: .9rem;
     }
     .header-button a{
         font-size: .9rem;
