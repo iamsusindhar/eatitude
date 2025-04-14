@@ -815,6 +815,9 @@ hr{
 /* Mobile design */
 
 @media (max-width: 565px) {
+    html{
+        overflow-x: hidden;
+    }
     .about-us, .our-services, .trusted-by, .testimonials, .contact-us, .newsletter, .how-we-work, .blogs{
         animation: appear linear;
         animation-timeline: view();
