@@ -74,6 +74,12 @@ header{
 .navbar ul li:hover::after{
     width: 68%;
 }
+header .fa{
+    display: none;
+}
+header .fas{
+    display: none;
+}
 .header-button a{ 
     text-decoration: none;
     color: white;
@@ -824,9 +830,36 @@ hr{
     .logo img{
         width: 85px;
     }
-    .navbar{
+    .header-button{
         display: none;
     }
+    header .fa{
+        display: block;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 10px 10px 30px;
+    }
+    header .fas{
+        display: block;
+    }
+    header i{
+        color: white;
+        margin: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    .navbar{
+        position: absolute;
+        text-align: left;
+        top: 0;
+        right: -200px;
+        background: #EA6F23;
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        transition: 1s;
+    } 
     .landing-page{
         padding: 0 20px;
     }
