@@ -17,6 +17,26 @@
 
     <main>
 
+        <header>
+            <div class="logo">
+                <img src="Images/Eatitude_logo_white.png" alt="">
+            </div>
+            <div class="navbar" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about_us">About us</a></li>
+                    <li><a href="#our_services">Our Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+            <div class="header-button">
+                <a href="#contact_us">Contact Us</a>
+            </div>
+        </header>
+
     <section class="blog-article">
         
     </section>
@@ -83,7 +103,15 @@
         <p>Developed by Susindhar S</p>
     </div>
 </footer>
-
+    <script>
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+    </script>
     <script type="module" src="editor.js"></script>
     <script type="module" src="app.js"></script>
 </body>
