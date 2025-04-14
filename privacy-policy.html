@@ -20,15 +20,17 @@
         <div class="logo">
             <img src="Images/Eatitude_logo_white.png" alt="">
         </div>
-        <div class="navbar">
+        <div class="navbar" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about_us">About us</a></li>
-                <li><a href="index.html#our_services">Our Services</a></li>
-                <li><a href="index.html#testimonials">Testimonials</a></li>
-                <li><a href="index.html#blog">Blogs</a></li>
+                <li><a href="#about_us">About us</a></li>
+                <li><a href="#our_services">Our Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
             </ul>
         </div>
+        <i class="fas fa-bars" onclick="showmenu()"></i>
         <div class="header-button">
             <a href="#contact_us">Contact Us</a>
         </div>
@@ -200,6 +202,15 @@
 
      <!------------------------ Swiper.js Link ------------------------>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
      <script type="module" src="app.js"></script>
 </body>
 </html>
