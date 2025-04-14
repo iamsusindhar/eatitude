@@ -20,7 +20,8 @@
         <div class="logo">
             <img src="Images/Eatitude_logo_white.png" alt="">
         </div>
-        <div class="navbar">
+        <div class="navbar" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about_us">About us</a></li>
@@ -29,6 +30,7 @@
                 <li><a href="blogs.html">Blogs</a></li>
             </ul>
         </div>
+        <i class="fas fa-bars" onclick="showmenu()"></i>
         <div class="header-button">
             <a href="#contact_us">Contact Us</a>
         </div>
@@ -350,13 +352,13 @@
 
         <!-- Newsletter sign up section -->
 
-<!--         <section class="newsletter">
+        <section class="newsletter">
             <h1>Stay Hungry for Insights, <span class="color"> Stay Ahead in F&B.</span> <br> Fresh trends, expert tips, and exclusive updates - <span class="color">straight to your inbox.</span> </h1>
             <div class="input-wrapper">
                    <input type="email" placeholder="Enter your Email Id..." />
                    <button type="button">SUBSCRIBE</button>
             </div>    
-        </section> -->
+        </section>
 
         <section class="contact-us" id="contact_us">
             <div class="section-header">
@@ -489,6 +491,15 @@
 
      <!------------------------ Swiper.js Link ------------------------>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
      <script type="module" src="app.js"></script>
 </body>
 </html>
