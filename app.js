@@ -250,6 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
       touchAngle: 45,
       resistance: true,
       resistanceRatio: 0.85,
+      autoplay: { delay: 3000, disableOnInteraction: false },
   });
 });
 
