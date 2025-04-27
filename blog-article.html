@@ -104,13 +104,13 @@
 
     <script>
     var navlinks = document.getElementById("navlinks");
-        function showmenu(){
-            navlinks.style.right = "0";
-            document.body.style.overflow = "hidden"; 
+        function showmenu() {
+            navlinks.style.transform = "translateX(0)";
+            document.body.style.overflow = "hidden"; // Lock scroll
         }
-        function hidemenu(){
-            navlinks.style.right = "-200px";
-            document.body.style.overflow = "auto";
+        function hidemenu() {
+            navlinks.style.transform = "translateX(100%)";
+            document.body.style.overflow = "auto"; // Unlock scroll
         }
     </script>
     <script type="module" src="editor.js"></script>
