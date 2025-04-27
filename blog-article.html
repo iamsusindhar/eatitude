@@ -104,12 +104,14 @@
 
     <script>
     var navlinks = document.getElementById("navlinks");
-    function showmenu(){
-        navlinks.style.right = "0";
-    }
-    function hidemenu(){
-        navlinks.style.right = "-200px";
-    }
+        function showmenu(){
+            navlinks.style.right = "0";
+            document.body.style.overflow = "hidden"; 
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+            document.body.style.overflow = "auto";
+        }
     </script>
     <script type="module" src="editor.js"></script>
     <script type="module" src="app.js"></script>
