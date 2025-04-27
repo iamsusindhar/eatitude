@@ -130,12 +130,14 @@
 
 
      <script>
-        var navlinks = document.getElementById("navlinks");
+       var navlinks = document.getElementById("navlinks");
         function showmenu(){
             navlinks.style.right = "0";
+            document.body.style.overflow = "hidden"; 
         }
         function hidemenu(){
             navlinks.style.right = "-200px";
+            document.body.style.overflow = "auto";
         }
     </script>
 </body>
