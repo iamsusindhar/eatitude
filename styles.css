@@ -9,9 +9,11 @@
 body{
     background:black;
     color: white;
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .section-header{
     text-align: center;  
