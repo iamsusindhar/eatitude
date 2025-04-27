@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatitude</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- swiper link css -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <!-- Firebase App (Core) -->
+     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+     <!-- Firebase Firestore -->
+     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="Images/eatitude_logo_orange_white.svg" alt="">
+        </div>
+        <div class="navbar" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about_us">About us</a></li>
+                <li><a href="#our_services">Our Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showmenu()"></i>
+        <div class="header-button">
+            <a href="#contact_us">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Landing Page -->
+
+    <div id="landing-page" class="landing-page">
+        <h1>
+            Serving <span class="color">Success</span> with <span class="color">Eatitude</span> <br> Food, Strategy, and Growth-<span class="color">All in One Place</span>
+        </h1>
+        <p>
+            At Eatitude, we help restaurants and cafés thrive with expert guidance. From crafting delicious menus to optimizing operations and marketing, we provide tailored solutions to make your food business stand out and grow.
+        </p>
+        <div class="button open-popup"><a href="">Apply Now !</a></div>
+
+        
+        
+        
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <defs>
+                  <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#EA6F23;stop-opacity:1" />
+                    <stop offset="65%" style="stop-color:#000000;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#waveGradient)" fill-opacity="1" d="M0,160L120,133.3C240,107,480,53,720,53.3C960,53,1200,107,1320,133.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+              </svg>
+        </div>
+    </div>
+
+
+    <!-- Main body section of the website -->
+
+    <main>
+
+        <!-- About us section -->
+
+        <section id="about_us" class="about-us">
+            <div class="section-header">
+                <h1>ABOUT US</h1>
+                <p>Explore the Journey That Defines Us.</p>
+            </div>
+           
+            <div class="about-us-container">
+                <div class="au-image">
+                        <img src="Images/Copy of Koushik Shankar.jpg" alt="">
+                    
+                </div>
+                <div class="au-content">
+                    <p>Eatitude began as a Food & Beverage Business Consulting. Serving the F&B Industry for over 2 decades, founded on a passion for transforming traditional dining experiences.
+                    </p> 
+                    <p>Today, we stand as global leaders in restaurant consulting, helping clients around the world innovate and thrive in the competitive food and beverage industry.
+                    </p>
+                    <p>Our mission is to empower food and beverage establishments to maximize their potential. We provide comprehensive solutions that save time, reduce costs, and increase profitability, helping our clients succeed in an ever-evolving marketplace.</p>
+                    <h3>About the Founder !</h3>
+                    <p>Chef Koushik Shankar, famously known as The Mad Chef, discovered his passion for cooking at the age of five. A graduate of IHM Bangalore, he has over 25 years of experience in the F&B industry</p>
+                    <p>Koushik has collaborated with prominent figures like Mukesh Ambani and Amitabh Bachchan, and has been instrumental in launching numerous successful restaurants across India. </p>
+                    <p>His innovative approach to fusion cuisine and appearances as a judge on shows like MasterChef Tamil, Cook With Comali & Top Cooku Dupe Cooku have solidified his reputation as a true culinary icon. </p>
+                </div>
+            </div>  
+          
+        </section>
+
+        <section class="achievement-section">
+            <div class="achievement-header">
+              <h1>Achievements</h1>
+            </div>
+            <div class="achievements-scroll">
+              <div class="scroll-track">
+                <div class="scroll-track">
+                    <!-- Original Set -->
+                    <div class="achieve-box"><h1>2+</h1><p>Decades</p></div>
+                    <div class="achieve-box"><h1>24+</h1><p>Awards</p></div>
+                    <div class="achieve-box"><h1>300+</h1><p>Brands</p></div>
+                    <div class="achieve-box"><h1>400+</h1><p>Launches</p></div>
+                    <div class="achieve-box"><h1>4000+</h1><p>Original Recipes</p></div>
+                   
+                    <!-- Duplicate Set for seamless loop -->
+                    <div class="achieve-box"><h1>1000+</h1><p>Staff Trained</p></div>
+                    <div class="achieve-box"><h1>2000+</h1><p>Menus Crafted</p></div>
+                    <div class="achieve-box"><h1>2+</h1><p>Decades</p></div>
+                    <div class="achieve-box"><h1>24+</h1><p>Awards</p></div>
+                    <div class="achieve-box"><h1>300+</h1><p>Brands</p></div>
+                    <div class="achieve-box"><h1>4000+</h1><p>Original Recipes</p></div>
+                    <div class="achieve-box"><h1>400+</h1><p>Launches</p></div>
+                  </div> 
+              </div>
+            </div>
+        </section>
+
+
+        <section id="our_services" class="our-services">
+            <div class="section-header">
+                <h1>OUR SERVICES</h1>
+                <p>Integrated 7M's Approach</p>
+            </div>
+            <div class="services-container">
+                <div class="services-row">
+                    <div>
+                        <img src="Images/Icons/icon_menu.svg" alt="">
+                        <h1>Menu</h1>
+                        <p>We specialize in menu development consulting, tailoring exceptional culinary creativity to meet market trends and customer preferences.</p>
+                    </div>
+                    <div>
+                        <img src="Images/Icons/icon_manpower.svg" alt="">
+                        <h1>Manpower </h1>
+                        <p>Our restaurant staffing services provide trained personnel with the skills necessary for outstanding service, ensuring a seamless dining experience.</p>
+                    </div>
+                    <div>
+                        <img src="Images/Icons/ico_machiinery.svg" alt="">
+                        <h1>Machinery</h1>
+                        <p>Proper machinery and equipment are crucial for efficient & high-quality culinary operations. We guide you in selecting and purchasing the best machines.</p>
+                    </div>
+                </div>
+                <div class="services-row">
+                    <div>
+                        <img src="Images/Icons/icon_material.svg" alt="">
+                        <h1>Material</h1>
+                        <p>Eatitude helps you maintain consistency and superiority in all your ingredients and supplies, ensuring your brand's excellence and customer satisfaction.</p>
+                    </div>
+                    <div>
+                        <img src="Images/Icons/icon_marketing.svg" alt="">
+                        <h1>Marketing </h1>
+                        <p>With our innovative marketing strategies, we help you expand your restaurant's reach, engage more customers, and build a lasting brand presence.</p>
+                    </div>
+                    <div>
+                        <img src="Images/Icons/icon_management.svg" alt="">
+                        <h1>Management</h1>
+                        <p>We specialize in guiding restaurants and food service businesses to enhance operations and increase profitability with our consulting</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="money">
+            <h1>7th M - Leading to "<span class="color">MONEY</span>"</h1>
+            <p>We have a track record of creating profitable F&B Business Concepts.</p>
+            <p class="bold">Get it done right, the 1st time. Save Time, Save Money !!!</p>
+            <div class="open-popup">
+            <a href="#funnel.html">Book a Call Now !</a>
+            </div>
+        </section>
+
+        <!-- Who we work for section -->
+
+        
+        <section class="who-we-work">
+            <div class="section-header">
+                <h1>WHO WE WORK FOR ?</h1>
+                <p>From Idea to Empire, We Build with You.</p>
+            </div>
+
+            <div class="who-we-work-container">
+                <div>
+                    <img src="Images/startup.webp" alt="">
+                    <h1>Startup</h1>
+                    <p>Helping new food ventures launch successfully through expert guidance in concept development, branding, and operations setup for a confident and well-prepared market entry.</p>
+                </div>
+                <div>
+                    <img src="Images/Scaleup-Eatitude-1024x576.webp" alt="">
+                    <h1>ScaleUp</h1>
+                    <p>Empowering growing food businesses with strategic insights, market research, and scalable systems to streamline operations and support sustainable long-term expansion.</p>
+                </div>
+                <div>
+                    <img src="Images/revive-1024x576.webp" alt="">
+                    <h1>Revival</h1>
+                    <p>Specialized revival plans for underperforming restaurants, focusing on operational fixes, customer experience improvements, and competitive positioning to restore profitability and relevance.</p>
+                </div>
+            </div>
+            <div class="www-button open-popup">
+                <a href="">Change Your Restaurant's Fate With One Call !</a>
+            </div>
+        </section>
+
+        <!-- how we work section -->
+
+        <section id="how_we_work" class="how-we-work">
+            <div class="section-header">
+                <h1>HOW WE WORK ?</h1>
+                <p>From Vision to Reality, Here's How We Work.</p>
+            </div>
+
+            <div class="hwwork-container">
+                <div class="hww-one">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <span>STEP 1</span>
+                    <h1>STRATEGIZE</h1>
+                    <p>We begin by refining your vision-menu creation, brand identity, and business planning, all aligned with your market goals.</p>
+                </div> 
+                <div class="hww-two">
+                    <span>STEP 2</span>
+                    <h1>SET-UP</h1>
+                    <p>We take care of the groundwork-kitchen installation, team hiring, and setting up day-to-day operations, prepping you for launch.</p>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="hww-three">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <span>STEP 3</span>
+                    <h1>EXECUTE</h1>
+                    <p>From launch day to full service, we ensure smooth operations, manage marketing, and optimize customer experience.</p>
+                </div>
+                <div class="hww-two">
+                    <span>STEP 4</span>
+                    <h1>SCALE PROFITIABLY</h1>
+                    <p>We focus on consistent growth—tracking metrics, increasing profitability, and preparing your business to scale efficiently.</p>
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted by section -->
+
+        <section class="trusted-by">
+            <h1> <span class="color">Trusted</span>  by Leaders from <br> <span class="color">F&B Industry !</span></h1>
+            <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu</p>
+            <div class="trusted-by-container">
+                <div class="div1"> </div>
+                <div class="div2"> </div>
+                <div class="div3"> </div>
+                <div class="div4"> </div>
+                <div class="div5"> </div>
+                <div class="div6"> </div>
+                <div class="div7"> </div>
+                <div class="div8"> </div>
+                <div class="div9"> </div>
+                <a href="#testimonials">Let's hear what they say about us !</a>
+            </div>
+           
+        </section>
+
+        <!-- Testimonials section -->
+        <section id="testimonials" class="testimonials">
+            <div class="section-header">
+                <h1>TESTIMONIALS</h1>
+                <p>Real Stories, Genuine Experiences from our Customers.</p>
+            </div>
+            
+           <!-- Swiper container -->
+           <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrapper">
+                        <div class="card-info"> 
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Eatitude helped us launch our restaurant from scratch and made everything feel easy.</p>
+                            <h1> - Ventakesh Bhat, CEO of Accord</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/IMG_20250306_183341.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrapper">
+                        <div class="card-info"> 
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>I didn't know where to start. Their team guided me through every step of the journey.</p>
+                            <h1> - Ventakesh Bhat, CEO of Accord</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/IMG_20250306_183341.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrapper">
+                        <div class="card-info"> 
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>From menus to marketing, they made sure our food business stood out from day one.</p>
+                            <h1> - Ventakesh Bhat, CEO of Accord</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/IMG_20250306_183341.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrapper">
+                        <div class="card-info"> 
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>We finally found a team that actually understands how F&B works on the ground.</p>
+                            <h1> - Ventakesh Bhat, CEO of Accord</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/IMG_20250306_183341.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="swiper-slide">
+                    <div class="testimonial-wrapper">
+                        <div class="card-info"> 
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Our sales doubled in just three months after working with Eatitude. Couldn't be happier.</p>
+                            <h1> - Ventakesh Bhat, CEO of Accord</h1>
+                        </div>
+                        <div class="card-image">
+                            <img src="Images/IMG_20250306_183341.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          </section>
+        <!-- Blog section -->
+
+        <section id="blog" class="blog">
+            <div class="section-header">
+                <h1>BLOGS</h1>
+                <p>Fresh Insights, Tasty Trends - Explore Our Blog!</p>
+            </div>
+            <div class="blog-container">
+                
+            </div>
+        </section>
+
+        <!-- Newsletter sign up section -->
+
+        <section class="newsletter">
+            <h1>Stay Hungry for Insights, <span class="color">Stay Ahead in F&B.</span> <br> Fresh trends, expert tips, and exclusive updates - <span class="color">straight to your inbox.</span></h1>
+            <div class="input-wrapper">
+              <input id="newsletterEmail" type="email" placeholder="Enter your Email Id..." required />
+              <button id="subscribeNewsletter" type="button">SUBSCRIBE</button>
+            </div>    
+          </section>
+          
+        
+        <section class="contact-us" id="contact_us">
+            <div class="section-header">
+                <h1>CONTACT US</h1>
+                <p>Let's Connect & Create Something Delicious!</p>
+            </div>
+
+            <div class="contact-box">
+                <h1>You are just <span class="color">one click</span>  away from success !</h1>
+               <div class="contact-button open-popup">
+                <a href="">Click Me</a>
+            </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+               <img src="Images/eatitude_logo_black_white.svg" alt="">
+               <h3>Crafted with flavor,<br> driven by passion.</h3>
+               <p>Eatitude helps F&B brands grow with bold ideas and tasty strategies.</p>
+            </div>
+            <div class="footer-content">
+                <div class="quick-link">
+                    <h1>Quick Links</h1>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about_us">About us</a></p>
+                    <p><a href="#our_services">Our Services</a></p>
+                    <p><a href="#testimonials">Testimonials</a></p>
+                    <p><a href="#blogs">Blog</a></p>
+                    <p><a href="#contact_us">Contact Us</a></p>
+                </div>
+                <div class="legal-info">
+                    <h1>Legal & Info</h1>
+                    <p><a href="privacy-policy.html">Privacy Policy</a></p>
+                    <p><a href="terms-conditions.html">Terms & Conditions</a></p>
+                    <p><a href="">Careers</a></p>
+                    <h2>Social links</h2>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                </div>
+                <div class="footer-info">
+                    <h1>Contact Info</h1>
+                    <p><i class="fa-solid fa-location-dot"></i>7/88, East Coast Road, Kovalam, Chennai</p>
+                    <p> <i class="fa-solid fa-envelope"></i>management@eatitude.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>9687548875</p>
+                    <p><i class="fa-solid fa-house-circle-check"></i>9 A.M.-5 P.M.</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h1>Subscribe to our newsletter</h1>
+                    <p>Fresh trends, expert tips, and exclusive updates - straight to your inbox.</p>
+                    <input id="footerNewsletterEmail" placeholder="Your Email Id" type="email" required>
+                    <button id="footerNewsletterButton">Subscribe</button>
+                  </div>
+                  
+            </div>
+        </div>
+
+        <hr>
+        <div class="credits">
+            <p>©2024 Eatitude. All Rights Reserved.</p>
+            <p>Developed by Susindhar S</p>
+        </div>
+    </footer>
+
+    <!-- Application Popup -->
+<!-- Application Popup -->
+<section id="applicationPopup" class="popup-overlay">
+    <div class="popup-content">
+      <h2>You are 2 step away from SUCCESS ❤️‍🔥</h2>
+      <input type="text" id="appName" placeholder="Your Name" required />
+      <input type="email" id="appEmail" placeholder="Email ID" required />
+      <input type="tel" id="appPhone" placeholder="Phone Number" required />
+      <input type="text" id="appCity" placeholder="State/City" required />
+      <input type="text" id="appSource" placeholder="How did you hear about us?" required />
+      <button id="getStartedBtn">Get Started</button>
+      <p id="popupError" style="color:red; margin: 20px 0 0 0; display: none; text-align: center;">
+        Please fill out all the fields before proceeding.
+      </p>
+      <div id="popupLoading" style="display: none; text-align: center; margin-top: 10px; color: #EA6F23;">
+        You are almost there..
+      </div>      
+      <span class="close-popup" id="closePopupBtn">✖</span>
+    </div>
+</section>
+  
+
+  
+  
+     <!------------------------ Swiper.js Link ------------------------>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+     <script type="module" src="app.js"></script>
+</body>
+</html>

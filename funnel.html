@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatitude</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+
+    <main class="funnel">
+        <h1>From <span class="funnel-color">Kitchen to Concept</span> <br> we help you Launch, Grow, and Lead.</h1>
+        <p>At Eatitude, we work with restaurant owners to turn ideas into successful businesses. From building your concept to setting up your kitchen and growing your brand, We excel in everything. We've helped launch, fix, and scale restaurants at every stage.We've done it before, and we'll do it for you.</p>
+        <div class="funnel-video">
+            <video src="Images/eatitude 1 landscape.mp4" type="video/mp4" controls></video>
+        </div>
+        <h2>If you finished watching.. Answer these simple Questions and <span class="color"> Book a call with us !</span></h2>
+
+      <!-- Stage Selection -->
+      <div class="stage-selection" id="app">
+        <h3> <span style="color: #EA6F23;">STEP 2</span> - Which stage best describes your business right now?</h3>
+        <div class="stage-buttons">
+          <button onclick="selectStage('startup')">Startup</button>
+          <button onclick="selectStage('scaleup')">Scaleup</button>
+          <button onclick="selectStage('revival')">Revival</button>
+        </div>
+      </div>
+      <div id="calendlyEmbed" style="display:none; margin-top: 40px;"></div>
+
+      
+      
+    </main>
+
+    <footer>
+      <div class="footer">
+          <div class="footer-logo">
+             <img src="Images/eatitude_logo_black_white.svg" alt="">
+             <h3>Crafted with flavor,<br> driven by passion.</h3>
+             <p>Eatitude helps F&B brands grow with bold ideas and tasty strategies.</p>
+          </div>
+          <div class="footer-content">
+              <div class="quick-link">
+                  <h1>Quick Links</h1>
+                  <p><a href="index.html">Home</a></p>
+                  <p><a href="about_us">About us</a></p>
+                  <p><a href="#our_services">Our Services</a></p>
+                  <p><a href="#testimonials">Testimonials</a></p>
+                  <p><a href="#blogs">Blog</a></p>
+                  <p><a href="#contact_us">Contact Us</a></p>
+              </div>
+              <div class="legal-info">
+                  <h1>Legal & Info</h1>
+                  <p><a href="privacy-policy.html">Privacy Policy</a></p>
+                  <p><a href="terms-conditions.html">Terms & Conditions</a></p>
+                  <p><a href="">Careers</a></p>
+                  <h2>Social links</h2>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                  <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              </div>
+              <div class="footer-info">
+                  <h1>Contact Info</h1>
+                  <p><i class="fa-solid fa-location-dot"></i>7/88, East Coast Road, Kovalam, Chennai</p>
+                  <p> <i class="fa-solid fa-envelope"></i>management@eatitude.com</p>
+                  <p> <i class="fa-solid fa-phone"></i>9687548875</p>
+                  <p><i class="fa-solid fa-house-circle-check"></i>9 A.M.-5 P.M.</p>
+              </div>
+              <div class="footer-newsletter">
+                  <h1>Subscribe to our newsletter</h1>
+                  <p>Fresh trends, expert tips, and exclusive updates - straight to your inbox.</p>
+                  <input id="footerNewsletterEmail" placeholder="Your Email Id" type="email" required>
+                  <button id="footerNewsletterButton">Subscribe</button>
+                </div>
+                
+          </div>
+      </div>
+
+      <hr>
+      <div class="credits">
+          <p>©2024 Eatitude. All Rights Reserved.</p>
+          <p>Developed by Susindhar S</p>
+      </div>
+  </footer>
+
+      
+      <script>
+        const app = document.getElementById('app');
+let selectedStage = '';
+
+const questions = {
+  startup: [
+    { question: "Is this your first venture in the restaurant industry?", type: "text" },
+    { question: "What type of concept are you planning?", type: "text", placeholder: "Café, QSR, Cloud Kitchen, etc." },
+    { question: "Do you already have a location in mind or are you still searching?", type: "text" },
+    { question: "What's your expected timeline for launch?", type: "text" },
+    { question: "What's your estimated investment budget?", type: "select", options: ["1L", "1-5L", "5-10L", "Above 10L"] },
+    { question: "What kind of help are you looking from us?", type: "select", options: ["Setup", "Branding", "Kitchen Design", "Menu", "Full Project"] },
+    { question: "What inspired you to start a restaurant?", type: "text" }
+  ],
+  scaleup: [
+    { question: "How long have you been running your restaurant?", type: "text" },
+    { question: "How many outlets are you currently running?", type: "text" },
+    { question: "What type of restaurant do you run?", type: "select", options: ["Dine-in", "Quick Service (QSR)", "Cloud Kitchen", "Café/Bakery", "Multi-location / Franchise"] },
+    { question: "What is your average monthly revenue?", type: "select", options: ["Under 1L", "1-5L", "5-10L", "10L+"] },
+    { question: "Are you planning to expand with new outlets, or improve performance in current ones?", type: "text" },
+    { question: "What's your goal in the next 6-12 months?", type: "text" },
+    { question: "How ready are you to take action?", type: "select", options: ["Right now", "Maybe in 1-3 months", "In the next 6 months"] }
+  ],
+  revival: [
+    { question: "How long have you been running your restaurant?", type: "text" },
+    { question: "Tell us briefly what happened with your restaurant — why are you looking for a revival?", type: "text" },
+    { question: "When did you last operate the business?", type: "text" },
+    { question: "What made things go downhill?", type: "text" },
+    { question: "Do you still have access to the same space, team, or setup?", type: "select", options: ["Yes", "No"] },
+    { question: "What's your vision for the revival?", type: "text" },
+    { question: "How much are you planning to invest this time?", type: "select", options: ["Under 1L", "1-5L", "5-10L", "10L+"] },
+    { question: "What kind of support do you need most right now?", type: "select", options: ["Rebranding & Concept", "Space Design & Layout", "Menu Strategy", "Marketing & Relaunch", "Full Project Revival"] },
+    { question: "How ready are you to take action?", type: "select", options: ["Right now", "Maybe in 1-3 months", "In the next 6 months"] }
+  ]
+};
+
+function selectStage(stage) {
+  selectedStage = stage;
+  app.innerHTML = `<h3><span style="color: #EA6F23;">STEP 3</span> - Answer the below questions to book a call!</h3>
+    <form id="questionForm">
+      ${questions[stage].map((q, i) => `
+        <label>${q.question}</label>
+        ${q.type === "text"
+          ? `<input type="text" name="q${i}" placeholder="${q.placeholder || ''}" required>`
+          : `<select name="q${i}" required>
+              <option value="">Select an option</option>
+              ${q.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
+            </select>`
+        }
+      `).join('')}
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>`;
+
+  document.getElementById('questionForm').addEventListener('submit', handleSubmit);
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const uniqueID = localStorage.getItem("applicationUniqueID");
+
+  const data = {
+    type: "funnel",
+    uniqueID: uniqueID,
+    stage: selectedStage,
+    answers: []
+  };
+
+  for (let input of form.elements) {
+    if (input.name) {
+      if (input.value.trim() === '') {
+        alert('Please answer all questions!');
+        return;
+      }
+      data.answers.push(input.value.trim());
+    }
+  }
+
+  const submitButton = form.querySelector(".submit-btn");
+  submitButton.disabled = true;
+  submitButton.innerText = "Sending your info...";
+
+  const webhookURL = "https://script.google.com/macros/s/AKfycbwC2RyHwfTVSjb_iPbIbZe7TFLLk-jYWio0u6QUkRSh7765ffsVt9PIZOtusCdg4YLr/exec";
+
+  fetch(webhookURL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data),
+    mode: "no-cors"
+  })
+  .then(() => {
+    form.remove();
+    const heading = app.querySelector('h3');
+    if (heading) {
+      heading.remove();
+    }
+
+    const userName = localStorage.getItem("userName");
+    const userEmail = localStorage.getItem("userEmail");
+
+    const calendlyDiv = document.createElement('div');
+    calendlyDiv.id = "calendlyWidget";
+    document.getElementById('app').appendChild(calendlyDiv);
+
+    // Embed Calendly Inline Widget
+    Calendly.initInlineWidget({
+      url: `https://calendly.com/susinthar5?name=${encodeURIComponent(userName)}&email=${encodeURIComponent(userEmail)}`,
+      parentElement: calendlyDiv,
+      prefill: {},
+      utm: {}
+    });
+
+    // Listen for Calendly Event Scheduled
+    window.addEventListener('message', function(e) {
+      if (e.origin === "https://calendly.com" && e.data.event && e.data.event === "calendly.event_scheduled") {
+        showThankYouMessage();
+      }
+    });
+
+  })
+  .catch(error => {
+    console.error("Error submitting answers:", error);
+    alert("Network error. Please try again.");
+    submitButton.disabled = false;
+    submitButton.innerText = "Submit";
+  });
+}
+
+// Thank You Message after Booking
+function showThankYouMessage() {
+  const appDiv = document.getElementById('app');
+  appDiv.innerHTML = `
+    <div style="text-align:center; margin-top: 20px;">
+        <h2>Thank You for Booking Your Strategy Call!</h2>
+        <p style="width:100%;">We're excited to speak with you and learn more about your restaurant journey.</p>
+        <h3 style="margin: 10px 0;">🔔 Please do these before the call:</h3>
+        <ul style="list-style-type: none; padding: 0; text-align:left; max-width:500px; margin:auto;">
+          <li>✅ Keep your business details ready.</li>
+          <li>✅ Be in a quiet place during the call.</li>
+          <li>✅ Prepare any questions you want to ask us.</li>
+        </ul>
+        <p>Talk to you soon! 🚀</p>
+    </div>
+  `;
+}
+
+      </script>
+      
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</body>
+</html>
