@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eatitude</title>
+    <meta name="author" content="Eatitude | Restaurant Consulting Experts">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Eatitude empowers restaurant owners to launch, scale, or revive their businesses with expert F&B consulting. From concept creation to marketing strategy, we turn food dreams into profitable realities.">
+    <meta name="keywords" content="restaurant consulting, food business consultant, restaurant marketing, F&B branding, kitchen setup consultant, restaurant scaling, startup restaurant help, food and beverage consulting, menu development, hospitality consulting">
+
+    <title>Eatitude | Restaurant Consulting</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Eatitude | Launch, Scale, and Revive Your Restaurant">
+    <meta property="og:description" content="Partner with Eatitude to build, brand, and grow successful food businesses. From startup strategies to scaling and revival solutions.">
+    <meta property="og:image" content="https://eatitude.com/Images/eatitude_logo_orange_white.svg">
+    <meta property="og:url" content="https://eatitude.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Eatitude">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eatitude | Restaurant Consulting and Growth Solutions">
+    <meta name="twitter:description" content="We help food businesses craft success stories. Start your journey with Eatitude today.">
+    <meta name="twitter:image" content="https://eatitude.com/Images/eatitude_logo_orange_white.svg">
+
+    <link rel="icon" href="Images/" type="image/x-icon"> 
+    <!-- need to add favicon image -->
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -13,6 +36,29 @@
      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
      <!-- Firebase Firestore -->
      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+     <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Eatitude",
+          "url": "https://eatitude.com",
+          "logo": "https://eatitude.com/Images/eatitude_logo_orange_white.svg",
+          "description": "Eatitude empowers restaurant owners to launch, grow, and revive successful businesses with expert F&B consulting, marketing, and operations strategies.",
+          "sameAs": [
+            "https://www.instagram.com/eatitude/",
+            "https://www.linkedin.com/company/eatitude/",
+            "https://www.facebook.com/eatitude/"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-9687548875",
+            "contactType": "customer support",
+            "areaServed": "IN",
+            "availableLanguage": "English"
+          }
+        }
+    </script>
+        
 </head>
 <body>
     
@@ -79,7 +125,6 @@
             <div class="about-us-container">
                 <div class="au-image">
                         <img src="Images/Copy of Koushik Shankar.jpg" alt="">
-                    
                 </div>
                 <div class="au-content">
                     <p>Eatitude began as a Food & Beverage Business Consulting. Serving the F&B Industry for over 2 decades, founded on a passion for transforming traditional dining experiences.
@@ -477,7 +522,7 @@
      <!------------------------ Swiper.js Link ------------------------>
      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
      <script>
-       var navlinks = document.getElementById("navlinks");
+        var navlinks = document.getElementById("navlinks");
         function showmenu() {
             navlinks.style.transform = "translateX(0)";
             document.body.style.overflow = "hidden"; // Lock scroll
