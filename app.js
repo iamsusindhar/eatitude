@@ -172,6 +172,34 @@ async function loadBlogArticle() {
     }
 
     const blogData = blogSnapshot.data();
+    // --------- Inject Dynamic Schema for BlogPost ---------
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": blogData.title,
+      "description": blogData.subtitle || stripHTML(blogData.content).slice(0, 150) + "...",
+      "image": blogData.image,
+      "author": {
+      "@type": "Organization",
+      "name": "Eatitude"
+    },
+    "publisher": {
+    "@type": "Organization",
+    "name": "Eatitude",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://eatitude.com/Images/eatitude_logo_orange_white.svg"
+    }
+  },
+  "datePublished": new Date(blogData.date.seconds * 1000).toISOString()
+};
+
+const schemaScript = document.createElement('script');
+schemaScript.type = 'application/ld+json';
+schemaScript.textContent = JSON.stringify(structuredData);
+document.head.appendChild(schemaScript);
+// --------------------------------------------------------
+
     const currentBlogDate = blogData.date;
 
     // --- Get previous blog (older date)
