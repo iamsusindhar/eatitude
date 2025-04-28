@@ -1056,7 +1056,7 @@ hr{
         font-size: 1.5rem;
         cursor: pointer;
     }
-     .navbar {
+    .navbar {
         position: fixed; 
         top: 0;
         right: 0;
@@ -1173,7 +1173,7 @@ hr{
         margin: 0 auto 8px;
     }
     .bold{
-        width: 80% !important;
+        width: 90% !important;
     }
     .who-we-work-container{
         flex-direction: column;
@@ -1328,6 +1328,19 @@ hr{
     }
     .funnel form {
         padding: 12px;
+    }
+    .stage-buttons {
+        flex-direction: column;
+    }
+    .funnel form {
+        padding: 8px;
+        gap: 8px;
+    }
+    .funnel button {
+        font-size: 1rem;
+    }
+    .stage-selection{
+        padding: 6px;
     }
 }
 @media (min-width: 1700px) {
