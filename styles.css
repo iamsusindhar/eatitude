@@ -370,6 +370,9 @@ main{
 .who-we-work{
     min-height: 100vh;
 }
+.who-we-work .section-header h1{
+    font-size: 1.9rem;
+}
 .who-we-work-container{
     display: flex;
     justify-content: space-between;
@@ -1165,6 +1168,9 @@ hr{
     .services-row div{
         margin: 20px 0;
     }
+    .services-row div p{
+        width: 97%;
+    }
     .hwwork-container{
         flex-direction: column;
         padding-top: 40px;
@@ -1203,14 +1209,14 @@ hr{
         flex-direction: column;
         gap: 10px;
         padding-top: 30px;
+        text-align: left;
     }
     .who-we-work-container div {
-        padding: 10px;
+       padding: 10px 0;
     }
     .www-button a{
         font-size: .75rem;
         padding: 10px;
-        width: 100%;
     }
     .www-button{
         margin-bottom: 30px;
