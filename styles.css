@@ -1224,6 +1224,9 @@ hr{
     .trusted-by{
         min-height: auto;
     }
+    .trusted-by h1{
+        font-size: 1.5rem;
+    }
     .trusted-by-container{
         padding: 20px 0;
         gap: 8px;
