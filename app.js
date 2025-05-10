@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       document.getElementById('footerNewsletterEmail').value = '';
-      footerNewsletterButton.innerText = 'Subscribed ✅';
+      footerNewsletterButton.innerText = 'Subscribed ';
       setTimeout(() => {
         footerNewsletterButton.innerText = 'Subscribe';
       }, 4000);
