@@ -165,27 +165,37 @@ main{
 .about-us-container{
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 70px;
 }
+
 .au-image{
     flex-basis: 48%;
     margin: auto;
     text-align: center;
 }
+.au-image-one{
+    flex-basis: 48%;
+    margin: auto;
+    text-align: center;
+}
+.au-image-one img{
+    width: 85%;
+    height: 320px;
+}
 .au-image img{
-    width: 520px;
+    width: 400px;
 }
 .au-content{
     flex-basis:48%;
 }
 .au-content h3{
     font-family: Lora;
-    font-size: 1.5rem;
-    margin: 10px 0;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
     font-weight: 600;
 }
 .au-content p{
-    width: 95%;
+    width: 96%;
     padding-bottom: 12px;
     color: #b7b7b7;
 }
@@ -557,63 +567,68 @@ main{
     grid-template-rows: repeat(10, 1fr);
     gap: 14px;
     position: relative;
+    padding-top: 40px;
+    
 }
-
+.trusted-by-container img{
+     width: 85%;
+     border-radius: 100%;
+}
     
 .div1{
     grid-area: 2 / 4 / 6 / 5; 
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 }
 .div2{
     grid-area: 3 / 5 / 7 / 6; 
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 
 }
 .div3{
     grid-area: 3 / 3 / 7 / 4; 
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 }
 .div4{
     grid-area: 2 / 6 / 6 / 7; 
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 }
 .div5{
     grid-area: 6 / 6 / 10 / 7;
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 }
 .div6{
     grid-area: 2 / 2 / 6 / 3; 
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 }
 .div7{
     grid-area: 6 / 2 / 10 / 3;
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 }
 .div8{
     grid-area: 4 / 1 / 8 / 2; 
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 }
 .div9{
     grid-area: 4 / 7 / 8 / 8; 
-    background-color: #444;
+    /* background-color: #444;
     width: 100%;
-    height: 240px;
+    height: 240px; */
 }
 .trusted-by a{
     text-decoration: none;
@@ -623,8 +638,8 @@ main{
     border: 1px solid #EA6F23;
     border-radius: 4px;
     position: absolute;
-    bottom: 145px;
-    left: 525px;
+    bottom: 90px;
+    left: 500px;
 }
 .trusted-by a:focus, .trusted-by a:hover{
     border-color: #EA6F23;
